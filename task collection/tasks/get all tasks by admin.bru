@@ -1,0 +1,15 @@
+meta {
+  name: get all tasks by admin
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{pro-url}}/task/getAllTasks
+  body: none
+  auth: none
+}
+
+headers {
+  auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM1MGZjY2ZlNDE3NTE3NDA5NzU0MTMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MDc0MTM1OTN9.qEFJXZE-aV6K3hp1V6cCYTvWT1aeHIdrIgLp118Vd74
+}

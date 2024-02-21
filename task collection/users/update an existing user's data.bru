@@ -1,0 +1,19 @@
+meta {
+  name: update an existing user's data
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{pro-url}}/user/update
+  body: json
+  auth: none
+}
+
+headers {
+  auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM1MGZjY2ZlNDE3NTE3NDA5NzU0MTMiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzA3NDEzNDUyfQ.-3i5NNfJLV2E5S3ibvvYdeRQ5_HCFTLOtt65A8w38-o
+}
+
+body:json {
+  {"isAdmin":"true"}
+}

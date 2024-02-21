@@ -1,0 +1,19 @@
+meta {
+  name: create a new task
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{pro-url}}/task/new
+  body: json
+  auth: none
+}
+
+headers {
+  auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM1MGZjY2ZlNDE3NTE3NDA5NzU0MTMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MDc0MTM1OTN9.qEFJXZE-aV6K3hp1V6cCYTvWT1aeHIdrIgLp118Vd74
+}
+
+body:json {
+  {"title":"first task","description":"nice task"}
+}

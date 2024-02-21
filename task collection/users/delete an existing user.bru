@@ -1,0 +1,15 @@
+meta {
+  name: delete an existing user
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{pro-url}}/user/unsubscribe
+  body: none
+  auth: none
+}
+
+headers {
+  auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM0ZWZjYTc3ODc0OTA2ZmU2M2NiY2UiLCJpYXQiOjE3MDc0MDUzMjJ9.KkEkU3fHbEpB-sY-b1E9iSllAIoze5pCbm8jy2f1gxo
+}

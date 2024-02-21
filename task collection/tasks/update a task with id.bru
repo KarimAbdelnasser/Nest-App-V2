@@ -1,0 +1,19 @@
+meta {
+  name: update a task with id
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{pro-url}}/task/update/65c50386d641814b2717854c
+  body: json
+  auth: none
+}
+
+headers {
+  auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM1MDM2NmQ2NDE4MTRiMjcxNzg1NDIiLCJpYXQiOjE3MDc0MTAyNzh9.Z50z6zix-jKL5PWNdSMCU2wYjR65VDE9ay7Zy2Hghr4
+}
+
+body:json {
+  {"title":"s task","description":"nice task"}
+}

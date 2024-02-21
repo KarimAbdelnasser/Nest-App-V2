@@ -1,0 +1,15 @@
+meta {
+  name: sign in
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{pro-url}}/user/signin
+  body: json
+  auth: none
+}
+
+body:json {
+  {"email":"example2@mail.com","password":"passwordExample2"}
+}

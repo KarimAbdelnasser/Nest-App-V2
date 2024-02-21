@@ -1,0 +1,19 @@
+meta {
+  name: get a task with ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{pro-url}}/task/getById/65c4f0f3e106f374c2718124
+  body: none
+  auth: none
+}
+
+query {
+  ~auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM0ZjA4ZDY2NjlmZjQ3N2I3Zjk2ZGMiLCJpYXQiOjE3MDc0MDU0NTN9.WY3p-pfuPpXup5uUIJE3n1LLG1WYOIqqQcjS2lB4R04
+}
+
+headers {
+  auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM0ZjA4ZDY2NjlmZjQ3N2I3Zjk2ZGMiLCJpYXQiOjE3MDc0MDU0NTN9.WY3p-pfuPpXup5uUIJE3n1LLG1WYOIqqQcjS2lB4R04
+}
