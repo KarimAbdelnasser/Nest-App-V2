@@ -13,7 +13,7 @@ import { JwtMiddleware } from 'src/middleware/jwt.middleware';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     MongooseModule.forRootAsync({
-      useFactory: () => ({ uri: config.mongoUrlDev }),
+      useFactory: () => ({ uri: config.mongoUrlPro }),
     }),
     UserModule,
     TaskModule,
